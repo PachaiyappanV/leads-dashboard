@@ -1,4 +1,4 @@
-const GlobeIcon = ({ className = "w-6 h-6 text-blue-600" }) => (
+const GlobeIcon = ({ className }: { className?: string }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     className={className}
