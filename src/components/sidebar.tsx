@@ -16,7 +16,7 @@ const Sidebar = () => {
             key={item.id}
             variant="ghost"
             size="sm"
-            className="w-10 h-10 p-0 text-gray-600 cursor-pointer"
+            className="w-10 h-10 p-0 text-gray-600 "
           >
             <item.icon className="w-6 h-6" />
           </Button>
@@ -27,7 +27,7 @@ const Sidebar = () => {
         <Button
           variant="ghost"
           size="sm"
-          className="w-10 h-10 p-0 text-gray-600 cursor-pointer"
+          className="w-10 h-10 p-0 text-gray-600"
         >
           <HelpCircle className="w-6 h-6" />
         </Button>
