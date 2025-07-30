@@ -42,7 +42,7 @@ const Header = () => {
                   <AvatarImage src="/profile1.png" />
                   <AvatarFallback>PC</AvatarFallback>
                 </Avatar>
-                <div className="text-left">
+                <div className="text-left hidden sm:block">
                   <div className="text-sm font-medium">Pamela Cain</div>
                   <div className="text-xs text-gray-500">pamela@dyson.com</div>
                 </div>

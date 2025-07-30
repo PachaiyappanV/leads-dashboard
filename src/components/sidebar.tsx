@@ -1,27 +1,7 @@
-import {
-  BarChart3,
-  FileText,
-  HelpCircle,
-  Home,
-  Layers,
-  Mail,
-  Phone,
-  Settings,
-  Users,
-} from "lucide-react";
+import { HelpCircle } from "lucide-react";
 import { Button } from "./ui/button";
 import GlobeIcon from "./global-icon";
-
-const sidebarItems = [
-  { icon: Home },
-  { icon: Users },
-  { icon: Mail },
-  { icon: Phone },
-  { icon: FileText },
-  { icon: Layers },
-  { icon: BarChart3 },
-  { icon: Settings },
-];
+import { sidebarItems } from "@/constants";
 
 const Sidebar = () => {
   return (
@@ -31,9 +11,9 @@ const Sidebar = () => {
       </div>
 
       <div className="flex flex-col gap-2 mt-4">
-        {sidebarItems.map((item, index) => (
+        {sidebarItems.map((item) => (
           <Button
-            key={index}
+            key={item.id}
             variant="ghost"
             size="sm"
             className="w-10 h-10 p-0 text-gray-600 cursor-pointer"

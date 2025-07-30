@@ -12,7 +12,7 @@ const PageHeader = () => {
           Organize leads and track their progress effectively here
         </p>
       </div>
-      <div className="flex gap-3">
+      <div className="flex flex-col sm:flex-row gap-3">
         <Button className="bg-blue-600 hover:bg-blue-700">
           <Plus className="w-4 h-4 mr-2" />
           New Leads
