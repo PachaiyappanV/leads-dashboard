@@ -26,7 +26,7 @@ const sidebarItems = [
 const Sidebar = () => {
   return (
     <div className="w-16 bg-white border-r border-gray-200 flex flex-col items-center py-4">
-      <div className="w-full flex items-center justify-center">
+      <div className="w-full flex items-center justify-center pt-1 pb-5  border-b border-gray-100">
         <GlobeIcon className="w-7 h-7 text-blue-600 " />
       </div>
 
