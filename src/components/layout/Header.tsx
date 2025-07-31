@@ -1,5 +1,5 @@
 "use client";
-import { Bell, AlignLeft } from "lucide-react";
+import { BellRing, AlignLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
@@ -9,21 +9,22 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import SearchBar from "./search-bar";
+import { SearchBar } from "../search";
 
 const Header = () => {
   return (
     <header className="bg-white border-b border-gray-200 px-6 py-4">
       <div className="flex items-center justify-between">
         <div className="flex items-center justify-center gap-x-6 ">
-          <AlignLeft className="w-5 h-5 text-gray-600" />
+          <AlignLeft className=" w-5 h-5 text-gray-600" />
+
           <SearchBar />
         </div>
 
         {/* Right Side */}
         <div className="flex items-center gap-4">
           <Button variant="ghost" size="sm">
-            <Bell className="w-5 h-5 text-gray-600" />
+            <BellRing className="text-gray-600" />
           </Button>
 
           <DropdownMenu>

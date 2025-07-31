@@ -1,6 +1,6 @@
 import { HelpCircle } from "lucide-react";
-import { Button } from "./ui/button";
-import GlobeIcon from "./global-icon";
+import { Button } from "../ui/button";
+import GlobeIcon from "./GlobeIcon";
 import { sidebarItems } from "@/constants";
 
 const Sidebar = () => {
@@ -18,7 +18,7 @@ const Sidebar = () => {
             size="sm"
             className="w-10 h-10 p-0 text-gray-600 "
           >
-            <item.icon className="w-6 h-6" />
+            <item.icon />
           </Button>
         ))}
       </div>
@@ -29,7 +29,7 @@ const Sidebar = () => {
           size="sm"
           className="w-10 h-10 p-0 text-gray-600"
         >
-          <HelpCircle className="w-6 h-6" />
+          <HelpCircle />
         </Button>
       </div>
     </div>

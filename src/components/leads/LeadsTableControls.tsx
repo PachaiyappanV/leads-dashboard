@@ -1,27 +1,27 @@
-import { Eye, Filter, RefreshCw, Layers } from "lucide-react";
-import { Button } from "./ui/button";
-import SearchBar from "./search-bar";
+import { LayoutGrid, Filter, RefreshCw, Layers } from "lucide-react";
+import { Button } from "../ui/button";
+import { SearchBar } from "../search";
 
 const TableControls = () => {
   return (
-    <div className="flex justify-between items-center mb-6">
+    <div className="flex flex-col-reverse items-start gap-3 sm:flex-row sm:justify-between sm:items-center mb-6">
       <div className="flex gap-3">
         <Button variant="outline" size="sm">
-          <Filter className="w-4 h-4 mr-2" />
+          <Filter />
           Filter
         </Button>
         <Button variant="outline" size="sm">
-          <Layers className="w-4 h-4 mr-2" />
+          <Layers />
           Bulk Actions
         </Button>
         <Button variant="outline" size="sm">
-          <RefreshCw className="w-4 h-4" />
+          <RefreshCw />
         </Button>
       </div>
       <div className="flex gap-3 items-center justify-center">
         <SearchBar />
         <Button variant="outline" size="sm">
-          <Eye className="w-4 h-4 mr-2" />
+          <LayoutGrid />
           View
         </Button>
       </div>
