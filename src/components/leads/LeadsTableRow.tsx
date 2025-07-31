@@ -31,17 +31,17 @@ const LeadsTableRow = ({ lead, index }: Props) => {
         {lead.id}
       </td>
       <td className="px-6 py-4">
-        <div className="text-sm font-medium whitespace-nowrap text-blue-600 hover:text-blue-800 cursor-pointer">
+        <div className="text-sm font-medium whitespace-nowrap text-blue-600 ">
           {lead.customer}
         </div>
       </td>
       <td className="px-6 py-4 text-sm whitespace-nowrap text-gray-900">
         {lead.company}
       </td>
-      <td className="px-6 py-4 text-sm whitespace-nowrap text-blue-600 hover:text-blue-800 cursor-pointer">
+      <td className="px-6 py-4 text-sm whitespace-nowrap text-blue-600 ">
         {lead.email}
       </td>
-      <td className="px-6 py-4 text-sm whitespace-nowrap text-blue-600 hover:text-blue-800 cursor-pointer">
+      <td className="px-6 py-4 text-sm whitespace-nowrap text-blue-600 ">
         {lead.phone}
       </td>
       <td className="px-6 py-4 text-sm whitespace-nowrap font-medium text-gray-900">
@@ -70,8 +70,8 @@ const LeadsTableRow = ({ lead, index }: Props) => {
         {lead.created}
       </td>
       <td className="px-6 py-4 text-right text-sm whitespace-nowrap font-medium">
-        <Button variant="ghost" size="sm">
-          <EllipsisVertical className="w-4 h-4" />
+        <Button variant="ghost" size="sm" className="cursor-pointer">
+          <EllipsisVertical />
         </Button>
       </td>
     </tr>

@@ -56,8 +56,8 @@ const LeadsFormModal = () => {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button className="bg-blue-600 hover:bg-blue-700">
-          <Plus className="w-4 h-4" />
+        <Button className="bg-blue-600 hover:bg-blue-700 cursor-pointer">
+          <Plus />
           New Leads
         </Button>
       </DialogTrigger>
@@ -201,7 +201,10 @@ const LeadsFormModal = () => {
           </div>
 
           <div className="flex justify-end gap-3 pt-4">
-            <Button type="submit" className="bg-blue-600 hover:bg-blue-700">
+            <Button
+              type="submit"
+              className="bg-blue-600 hover:bg-blue-700 cursor-pointer"
+            >
               Add Lead
             </Button>
           </div>

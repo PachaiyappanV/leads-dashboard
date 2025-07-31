@@ -15,22 +15,28 @@ const Header = () => {
   return (
     <header className="bg-white border-b border-gray-200 px-6 py-4">
       <div className="flex items-center justify-between">
-        <div className="flex items-center justify-center gap-x-6 ">
-          <AlignLeft className=" w-5 h-5 text-gray-600" />
+        {/* Left */}
+        <div className="flex items-center justify-center gap-x-6 mr-2 ">
+          <span>
+            <AlignLeft className="w-5 h-5 text-gray-600" />
+          </span>
 
           <SearchBar />
         </div>
 
-        {/* Right Side */}
-        <div className="flex items-center gap-4">
-          <Button variant="ghost" size="sm">
+        {/* Right */}
+        <div className="flex items-center gap-2">
+          <Button variant="ghost" size="sm" className="cursor-pointer">
             <BellRing className="text-gray-600" />
           </Button>
 
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="ghost" className="flex items-center gap-3 p-1">
-                <Avatar className="w-9 h-9">
+              <Button
+                variant="ghost"
+                className="flex items-center gap-3 p-1 cursor-pointer"
+              >
+                <Avatar className="w-8 h-8">
                   <AvatarImage src="/pic1.png" />
                   <AvatarFallback>PC</AvatarFallback>
                 </Avatar>
@@ -41,11 +47,17 @@ const Header = () => {
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end" className="w-48">
-              <DropdownMenuItem>Account</DropdownMenuItem>
-              <DropdownMenuItem>Billing</DropdownMenuItem>
-              <DropdownMenuItem>Settings</DropdownMenuItem>
+              <DropdownMenuItem className="cursor-pointer">
+                Account
+              </DropdownMenuItem>
+              <DropdownMenuItem className="cursor-pointer">
+                Billing
+              </DropdownMenuItem>
+              <DropdownMenuItem className="cursor-pointer">
+                Settings
+              </DropdownMenuItem>
               <DropdownMenuSeparator />
-              <DropdownMenuItem className="text-red-600">
+              <DropdownMenuItem className="text-red-600 cursor-pointer">
                 Logout
               </DropdownMenuItem>
             </DropdownMenuContent>

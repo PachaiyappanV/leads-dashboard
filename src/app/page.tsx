@@ -23,8 +23,8 @@ export default function Home() {
           </div>
           <div className="flex flex-col sm:flex-row gap-3">
             <LeadsFormModal />
-            <Button variant="outline">
-              <ArrowDown className="w-4 h-4" />
+            <Button variant="outline" className="cursor-pointer">
+              <ArrowDown />
               Export
             </Button>
           </div>
