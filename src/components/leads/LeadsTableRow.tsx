@@ -21,7 +21,7 @@ type Props = {
   index: number;
 };
 
-export function LeadsTableRow({ lead, index }: Props) {
+const LeadsTableRow = ({ lead, index }: Props) => {
   return (
     <tr className={index % 2 === 0 ? "bg-gray-50" : "bg-white"}>
       <td className="px-6 py-4 whitespace-nowrap">
@@ -76,4 +76,6 @@ export function LeadsTableRow({ lead, index }: Props) {
       </td>
     </tr>
   );
-}
+};
+
+export default LeadsTableRow;

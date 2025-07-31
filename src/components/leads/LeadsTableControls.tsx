@@ -19,7 +19,7 @@ const TableControls = () => {
         </Button>
       </div>
       <div className="flex gap-3 items-center justify-center">
-        <SearchBar />
+        <SearchBar className="bg-white border-gray-200" />
         <Button variant="outline" size="sm">
           <LayoutGrid />
           View

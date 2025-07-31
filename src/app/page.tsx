@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main className="flex-1 overflow-auto p-6">
       <div className="max-w-7xl  mx-auto">
-        <div className="flex justify-between items-start mb-6">
+        <div className="flex justify-between items-start mb-4  pb-4 border-b-2 border-gray-100">
           <div>
             <h1 className="text-2xl font-semibold text-gray-900">
               Leads Management

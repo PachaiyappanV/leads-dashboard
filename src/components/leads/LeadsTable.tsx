@@ -1,6 +1,5 @@
 import { leads } from "@/constants";
-import LeadsTableHeader from "./LeadsTableHeader";
-import { LeadsTableRow } from "./LeadsTableRow";
+import { LeadsPagination, LeadsTableHeader, LeadsTableRow } from ".";
 
 const LeadsTable = () => {
   return (
@@ -15,6 +14,7 @@ const LeadsTable = () => {
           </tbody>
         </table>
       </div>
+      <LeadsPagination />
     </div>
   );
 };
