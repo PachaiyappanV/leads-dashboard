@@ -9,7 +9,7 @@ const LeadsPagination = () => {
         Previous
       </Button>
 
-      <div className="flex items-center gap-2">
+      <div className="hidden sm:flex items-center gap-2 ">
         {[1, 2, 3].map((num) => (
           <Button key={num} variant="outline" size="sm">
             {num}
