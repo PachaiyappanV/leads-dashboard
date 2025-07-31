@@ -1,8 +1,12 @@
-import { LeadsTableControls, LeadsTable } from "@/components/leads";
+import {
+  LeadsTableControls,
+  LeadsTable,
+  LeadsFormModal,
+} from "@/components/leads";
 
 import { StatsCards } from "@/components/stats";
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Plus } from "lucide-react";
+import { ArrowDown } from "lucide-react";
 
 export default function Home() {
   return (
@@ -18,10 +22,7 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">
-            <Button className="bg-blue-600 hover:bg-blue-700">
-              <Plus className="w-4 h-4" />
-              New Leads
-            </Button>
+            <LeadsFormModal />
             <Button variant="outline">
               <ArrowDown className="w-4 h-4" />
               Export
