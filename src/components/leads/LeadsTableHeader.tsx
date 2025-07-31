@@ -1,4 +1,5 @@
 import { leadsTableHeaders } from "@/constants";
+import { ArrowUp } from "lucide-react";
 
 const LeadsTableHeader = () => {
   return (
@@ -14,6 +15,10 @@ const LeadsTableHeader = () => {
                 type="checkbox"
                 className="rounded border-gray-300 flex self-center"
               />
+            ) : id === 11 ? (
+              <span className="flex items-center gap-1">
+                {header} <ArrowUp className="w-4 h-4" />
+              </span>
             ) : (
               header
             )}

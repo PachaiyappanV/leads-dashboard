@@ -1,6 +1,6 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
-import { MoreHorizontal } from "lucide-react";
+import { EllipsisVertical } from "lucide-react";
 import { Badge } from "../ui/badge";
 import { getStatusColor, getTagColor } from "@/lib/leads";
 
@@ -57,7 +57,7 @@ const LeadsTableRow = ({ lead, index }: Props) => {
       </td>
       <td className="px-6 py-4 whitespace-nowrap">
         <Avatar className="w-8 h-8">
-          <AvatarImage src={lead.assigned || "/placeholder.svg"} />
+          <AvatarImage src={lead.assigned} />
           <AvatarFallback>U</AvatarFallback>
         </Avatar>
       </td>
@@ -71,7 +71,7 @@ const LeadsTableRow = ({ lead, index }: Props) => {
       </td>
       <td className="px-6 py-4 text-right text-sm whitespace-nowrap font-medium">
         <Button variant="ghost" size="sm">
-          <MoreHorizontal className="w-4 h-4" />
+          <EllipsisVertical className="w-4 h-4" />
         </Button>
       </td>
     </tr>

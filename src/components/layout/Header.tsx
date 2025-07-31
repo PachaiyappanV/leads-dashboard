@@ -31,7 +31,7 @@ const Header = () => {
             <DropdownMenuTrigger asChild>
               <Button variant="ghost" className="flex items-center gap-3 p-1">
                 <Avatar className="w-9 h-9">
-                  <AvatarImage src="/profile1.png" />
+                  <AvatarImage src="/pic1.png" />
                   <AvatarFallback>PC</AvatarFallback>
                 </Avatar>
                 <div className="text-left hidden sm:block">
