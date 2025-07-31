@@ -1,4 +1,5 @@
-import { LeadsTableControls } from "@/components/leads";
+import { LeadsTableControls, LeadsTable } from "@/components/leads";
+
 import { StatsCards } from "@/components/stats";
 import { Button } from "@/components/ui/button";
 import { Download, Plus } from "lucide-react";
@@ -29,6 +30,7 @@ export default function Home() {
         </div>
         <StatsCards />
         <LeadsTableControls />
+        <LeadsTable />
       </div>
     </main>
   );
